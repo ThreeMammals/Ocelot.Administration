@@ -1,4 +1,4 @@
-﻿namespace Ocelot.Authentication.IdentityServer
+﻿namespace Ocelot.Administration
 {
     using System;
     using System.Collections.Generic;
@@ -21,29 +21,25 @@
     {
         public static IOcelotAdministrationBuilder AddAdministration(this IOcelotBuilder builder, string path, string secret)
         {
-            var service = builder.Services.First(x => x.ServiceType == typeof(IConfiguration));
-            var configuration = (IConfiguration)service.ImplementationInstance;
-
             var administrationPath = new AdministrationPath(path);
+            builder.Services.AddSingleton<OcelotMiddlewareConfigurationDelegate>(IdentityServerMiddlewareConfigurationProvider.Get);
 
             //add identity server for admin area
             var identityServerConfiguration = IdentityServerConfigurationCreator.GetIdentityServerConfiguration(secret);
 
             if (identityServerConfiguration != null)
             {
-                AddIdentityServer(identityServerConfiguration, administrationPath, builder, configuration);
+                AddIdentityServer(identityServerConfiguration, administrationPath, builder, builder.Configuration);
             }
 
             builder.Services.AddSingleton<IAdministrationPath>(administrationPath);
-            return new OcelotAdministrationBuilder(builder.Services, configuration);
+            return new OcelotAdministrationBuilder(builder.Services, builder.Configuration);
         }
 
         public static IOcelotAdministrationBuilder AddAdministration(this IOcelotBuilder builder, string path, Action<IdentityServerAuthenticationOptions> configureOptions)
         {
-            var service = builder.Services.First(x => x.ServiceType == typeof(IConfiguration));
-            var configuration = (IConfiguration)service.ImplementationInstance;
-
             var administrationPath = new AdministrationPath(path);
+            builder.Services.AddSingleton<OcelotMiddlewareConfigurationDelegate>(IdentityServerMiddlewareConfigurationProvider.Get);
 
             if (configureOptions != null)
             {
@@ -51,7 +47,7 @@
             }
 
             builder.Services.AddSingleton<IAdministrationPath>(administrationPath);
-            return new OcelotAdministrationBuilder(builder.Services, configuration);
+            return new OcelotAdministrationBuilder(builder.Services, builder.Configuration);
         }
 
         private static void AddIdentityServer(Action<IdentityServerAuthenticationOptions> configOptions, IOcelotBuilder builder)

@@ -1,4 +1,4 @@
-﻿namespace Ocelot.Authentication.IdentityServer
+﻿namespace Ocelot.Administration
 {
     using System.Threading.Tasks;
     using Configuration;

@@ -1,4 +1,4 @@
-﻿namespace Ocelot.Authentication.IdentityServer.Benchmarks
+﻿namespace Ocelot.Administration.Benchmarks
 {
     using BenchmarkDotNet.Running;
 

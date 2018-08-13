@@ -2,9 +2,9 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/8ry4ailt7rr5mbu7?svg=true)](https://ci.appveyor.com/project/TomPallister/ocelot-cache-cachemanager)
 Windows (AppVeyor)
-[![Build Status](https://travis-ci.org/ThreeMammals/Ocelot.Authentication.IdentityServer.svg?branch=master)](https://travis-ci.org/ThreeMammals/Ocelot.Authentication.IdentityServer) Linux & OSX (Travis)
+[![Build Status](https://travis-ci.org/ThreeMammals/Ocelot.Administration.svg?branch=master)](https://travis-ci.org/ThreeMammals/Ocelot.Administration) Linux & OSX (Travis)
 
-[![Coverage Status](https://coveralls.io/repos/github/ThreeMammals/Ocelot.Authentication.IdentityServer/badge.svg?branch=develop)](https://coveralls.io/github/ThreeMammals/Ocelot.Authentication.IdentityServer?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/ThreeMammals/Ocelot.Administration/badge.svg?branch=develop)](https://coveralls.io/github/ThreeMammals/Ocelot.Administration?branch=develop)
 
 # Ocelot
 
@@ -16,13 +16,13 @@ Ocelot is designed to work with ASP.NET Core only and it targets `netstandard2.0
 
 Install Ocelot and it's dependencies using NuGet. 
 
-`Install-Package Ocelot.Authentication.IdentityServer`
+`Install-Package Ocelot.Administration`
 
 Or via the .NET Core CLI:
 
-`dotnet add package Ocelot.Authentication.IdentityServer`
+`dotnet add package Ocelot.Administration`
 
-All versions can be found [here](https://www.nuget.org/packages/Ocelot.Authentication.IdentityServer/)
+All versions can be found [here](https://www.nuget.org/packages/Ocelot.Administration/)
 
 ## Documentation
 

@@ -1,4 +1,4 @@
-namespace Ocelot.Authentication.IdentityServer.Benchmarks
+namespace Ocelot.Administration.Benchmarks
 {
     using System;
     using System.Collections.Generic;

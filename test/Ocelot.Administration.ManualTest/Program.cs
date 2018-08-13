@@ -1,4 +1,4 @@
-﻿namespace Ocelot.Authentication.IdentityServer.ManualTest
+﻿namespace Ocelot.Administration.ManualTest
 {
     using System.IO;
     using DependencyInjection;
@@ -25,7 +25,7 @@
                 })
                 .ConfigureServices(s => {
                     s.AddOcelot()
-                        .AddSomething();
+                        .AddAdministration("/administration", "secret");
                 })
                 .ConfigureLogging((hostingContext, logging) =>
                 {
