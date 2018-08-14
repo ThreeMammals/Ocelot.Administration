@@ -1,10 +1,9 @@
 [<img src="http://threemammals.com/images/ocelot_logo.png">](http://threemammals.com/ocelot)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/8ry4ailt7rr5mbu7?svg=true)](https://ci.appveyor.com/project/TomPallister/ocelot-cache-cachemanager)
-Windows (AppVeyor)
-[![Build Status](https://travis-ci.org/ThreeMammals/Ocelot.Administration.svg?branch=master)](https://travis-ci.org/ThreeMammals/Ocelot.Administration) Linux & OSX (Travis)
+[![Build status](https://ci.appveyor.com/api/projects/status/oey8630wo5ix756u?svg=true)](https://ci.appveyor.com/project/TomPallister/ocelot-administration) Windows (AppVeyor)
+[![Build Status](https://travis-ci.org/ThreeMammals/Ocelot.Administration.svg?branch=develop)](https://travis-ci.org/ThreeMammals/Ocelot.Administration) Linux & OSX (Travis)
 
-[![Coverage Status](https://coveralls.io/repos/github/ThreeMammals/Ocelot.Administration/badge.svg?branch=develop)](https://coveralls.io/github/ThreeMammals/Ocelot.Administration?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/ThreeMammals/Ocelot.Administration/badge.svg)](https://coveralls.io/github/ThreeMammals/Ocelot.Administration)
 
 # Ocelot
 
