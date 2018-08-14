@@ -26,7 +26,7 @@
     <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
-    <PackageReference Include="Ocelot" Version="10.0.1" />
+    <PackageReference Include="Ocelot" Version="10.1.0-unstable0006" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -46,6 +46,8 @@
     <PackageReference Include="Consul" Version="0.7.2.5" />
     <PackageReference Include="Rafty" Version="0.4.4" />
     <PackageReference Include="Microsoft.Data.SQLite" Version="2.1.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.6.0" />
+    <PackageReference Include="IdentityServer4" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Ocelot.Administration\Ocelot.Administration.csproj" />

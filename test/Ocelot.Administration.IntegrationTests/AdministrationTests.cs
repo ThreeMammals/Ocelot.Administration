@@ -22,6 +22,7 @@ using Ocelot.Middleware;
 using Shouldly;
 using TestStack.BDDfy;
 using Xunit;
+using Ocelot.Administration;
 
 [assembly: CollectionBehavior(DisableTestParallelization = true)]
 namespace Ocelot.IntegrationTests

@@ -16,6 +16,7 @@ namespace Ocelot.UnitTests.DependencyInjection
     using TestStack.BDDfy;
     using Xunit;
     using Ocelot.Middleware.Multiplexer;
+    using Ocelot.Administration;
 
     public class OcelotBuilderTests
     {
