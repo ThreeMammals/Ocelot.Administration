@@ -4,7 +4,7 @@
     <RuntimeFrameworkVersion>2.0.0</RuntimeFrameworkVersion>
     <NETStandardImplicitPackageVersion>2.0.0</NETStandardImplicitPackageVersion>
     <NoPackageAnalysis>true</NoPackageAnalysis>
-    <Description>Provides Ocelot extensions to use CacheManager.Net</Description>
+    <Description>Provides Ocelot extensions to use the administration API and IdentityService dependencies that come with it</Description>
     <AssemblyTitle>Ocelot.Administration</AssemblyTitle>
     <VersionPrefix>0.0.0-dev</VersionPrefix>
     <AssemblyName>Ocelot.Administration</AssemblyName>
